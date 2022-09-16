@@ -2,8 +2,8 @@ import numpy as np
 
 
 class SVM:
-    def __init__(self, learning_rate, lambda_param, n_iters) -> None:
-        self.lr = learning_rate
+    def __init__(self, lr, lambda_param, n_iters) -> None:
+        self.lr = lr
         self.lambda_param = lambda_param
         self.n_iters = n_iters
         self.weights = None
