@@ -12,7 +12,7 @@ class SVM:
     def fit(self, X, y):
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
-        self.b = 0
+        self.bias = 0
         y_ = np.where(y >= 0, 1, -1)
 
         for _ in range(self.n_iters):
